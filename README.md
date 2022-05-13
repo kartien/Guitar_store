@@ -1,4 +1,4 @@
-# Guitar Store template
+#  Guitar Store template 
 
 # Requerided conection database mysql
 
