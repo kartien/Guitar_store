@@ -4,7 +4,7 @@ var db = require("../conection_db/conection");
 //seccion product
 router.get("/", function (req, res, next) {
 
-  db.query("SELECT * FROM tblproducts", function (err, result) {
+  db.query("SELECT * FROM products", function (err, result) {
     console.log(result);
     res.render("products", { title: "Products",Guitar:result});
   });
