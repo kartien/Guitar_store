@@ -1,0 +1,15 @@
+h1{
+    font-size: 3.2rem;
+    padding-top: 2rem;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title{
+    color: red;
+}
