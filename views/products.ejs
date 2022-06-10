@@ -1,8 +1,24 @@
 <%- include layouts/header.ejs %>
 
-  <div class="container">
+<div class="hero-section">
+  <div class="card-grid">
+    <% for(var guitar=0;guitar<Guitar.length; guitar++) {
+      %>
+    <a class="card" href="#">
+      
+      <div class="card__background"><img class="img" src="<%= Guitar[guitar].image%>"></div>
+      <div class="card__content">
+        <p class="card__category"><%= Guitar[guitar].description %></p>
+        <h3 class="card__heading">Price: $<%= Guitar[guitar].precie %></h3>
+      </div>
+    </a>
+    <% } %>
+  </div>
+</div>
+
+ <!-- <div class="container">
   <h1>Products</h1>
-    <div class="row">
+    <div class="row wrap">
       <% for(var guitar=0;guitar<Guitar.length; guitar++) { %>
         <div class="col-sm-3">
           <div class="card main">
@@ -18,7 +34,7 @@
       <% } %>
       </div>
     </div>
-  </div>
+  </div>-->
   
 
    
