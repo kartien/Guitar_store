@@ -8,8 +8,9 @@
       
       <div class="card__background"><img class="img" src="<%= Guitar[guitar].image%>"></div>
       <div class="card__content">
-        <p class="card__category"><%= Guitar[guitar].description %></p>
-        <h3 class="card__heading">Price: $<%= Guitar[guitar].precie %></h3>
+        <p class="card__category"><%= Guitar[guitar].title %></p>
+        <h3 class="card__heading">Price: $ <%= Guitar[guitar].precie %></h3>
+        
       </div>
     </a>
     <% } %>
