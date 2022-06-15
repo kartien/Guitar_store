@@ -6,7 +6,7 @@ router.get("/", function (req, res, next) {
 
   db.query("SELECT * FROM products", function (err, result) {
     console.log(result);
-    res.render("products", { title: "Products",Guitar:result});
+    res.render("products", {Guitar:result});
   });
 
  
